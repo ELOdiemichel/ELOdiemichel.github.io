@@ -1,58 +1,171 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>
-		
-	</title>
+	
+	<meta charset="utf-8"> 
+
+<! Banner's head>		
+	<title>BIOCEAN</title>
+  	<link href='style.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Lato:300,400,700,900" rel="stylesheet"> 
+
+<!Footer's head>
+    <link rel='stylesheet'href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' crossorigin='anonymous' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
-<body>
+
 
 <body>
 	
+<! Banner's part>
+<div id="banner">
+	<div class="banner-links">
+
+		<div class="logo">
+			<img src="images/white-sun.png">
+		</div>
+
+		<div class="dropdown">
+  			<button class="btn" type="button" data-toggle="dropdown"><i class="fas fa-bars"></i>
+  			<span class="caret"></span></button>
+  				<ul class="dropdown-menu dropdown-menu-right">
+					<li><a href="#">Produits</a></li>
+					<li><a href="#">A propos</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Mon panier</a></li>
+					<li><a href="#">Connexion</a></li>
+				</ul>			
+		  </div> 
+
+	  </div>
+
+	  <div class="banner-header">
+	    <h1>BIOCEAN</h1>
+	    <h2>Produits solaires naturels et biologiques</h2>
+	    <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#login-modal">Commandez</button>
+      </div>
+
+	</div>
+
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	  <div class="modal-dialog">
+				<div class="loginmodal-container">
+					<h1>Connectez-vous sur votre compte</h1><br>
+				  <form>
+					<input type="text" name="user" placeholder="Email">
+					<input type="password" name="pass" placeholder="Mot de passe">
+					<input type="submit" name="login" class="login loginmodal-submit" value="Connexion">
+				  </form>
+			
+				  <div class="login-help">
+					<a href="#">Cr&eacute;er un compte</a> - <a href="#">Mot de passe oubli&eacute;</a>
+				  </div>
+
+				</div>
+		  </div>
+	 </div>
+
+<! Content's part>
 	<div class="section">
 
 	<div class="container">
 	  <div class="row">
 
-	    <div class="col-12 col-sm-6 col-md-3">
+	    <div class="ccol-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
 		 	<div class="card">		
-					<img src="images/cremeprotection.jpg" height="100">			
-					<h3 class="card">Crèmes de protection</h3>
-					<p> Trouver votre <strong>crème <em>protective</em></strong> pour votre peau</p>
+					<img id="photo" src="images/monoi.jpg" height="300">		
+					<h3 class="card"><strong>
+						Crème de protection
+					</strong></h3>
+					<p> Trouver votre crème <em>protective</em> adaptée</p>
 			</div>
 		</div>
 		   
-		<div class="col-12 col-sm-6 col-md-3">
+		<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
 			<div class="card">
-				<img src="images/cremeapressoleil.jpg" height="100">
-				<h3 class="card"></h3>
-				<p> Trouver votre <strong>crème <em>after sun</em></strong> adaptée</p>
+				<img id="photo2" src="images/protection.jpg" height="300">
+				<h3 class="card"><strong>
+					Crèmes après-soleil
+				</strong></h3>
+				<p> Trouver votre crème <em>after sun</em></p>
 			</div>
 	    </div>
 
-	    <div class="col-12 col-sm-6 col-md-3">
-		<div class="card">
-			<img src="images/gommage.jpg" height="100">
-			<h3>Awesome</h3>
-			<p>a <em>awesome</em> app, <strong>very awesome</strong> app</p>		
-		</div>
-
-
+	    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+			<div class="card">
+				<img id="photo3" src="images/gommage.jpg" height="300">
+				<h3 class="card"><strong>
+					Gommages
+				</strong></h3>
+				
+				<p> Trouver votre gommage votre bronzage !</p>	
+			</div>
 	    </div>
-	    <div class="col-12 col-sm-6 col-md-3">
-	      <!-- div class="card" -->
 
-	<div class="card">
-		<img src="images/nuage.png" height="100">
-		<h3>Beautiful</h3>
-		<p>a <em>beautiful</em> app, <strong>very beautiful</strong> app</p>	
-	</div>
+	    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+			<div class="card">
 
+				<img id="photo4" src="images/hat.jpg" height="300">
+				<h3 class="card"><strong>
+					Monoï
+				</strong></h3>
+				<p> Trouver votre monoï pour un été doré !</p>	
+			</div>
 	    </div>
+
+
+	    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+			<div class="card">
+				<img id="photo5" src="images/complementalimentaire.jpg" height="300">
+				<h3 class="card"><strong>
+					Compléments alimentaires
+				</strong></h3>	
+				<p> Pour une preparation optimale !</p>	
+			</div>
+	    </div>
+
+	    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+			<div class="card">
+
+				<img id="photo6" src="images/kit.jpg"  height="300">
+				<h3 class="card"><strong>
+					Kit complet
+				</strong></h3>				
+				<p> Construisez votre kit,<em> to be ready</em> !</p>	
+			</div>
+	    </div>
+
+
 	  </div>
 	</div>
 
+<!Footer's part>
 
+  <div id="footer">
+    <p>Biocean, a creation by <strong>@Kedge Business students</strong></p>
+        <ul class="list-inline-footer">
+          <li class="list-inline-item"><a href="https://www.youtube.com" target="blank"><i class="fab fa-youtube"></i></a></li>
+          <li class="list-inline-item"><a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook-square"></i></a></li>
+          <li class="list-inline-item"><a href="https://twitter.com" target="blank"><i class="fab fa-twitter-square"></i></a></li>
+          <li class="list-inline-item"><a href="https://fr.linkedin.com" target="blank"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+        </div>
+
+
+ 		<script crossorigin='anonymous' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' src='https://code.jquery.com/jquery-3.2.1.slim.min.js'></script>
+        <script crossorigin='anonymous' integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'></script>
+        <script crossorigin='anonymous' integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script>
+
+
+<! End of banner's part>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -1,0 +1,228 @@
+
+*/***********************Content's part*******************/
+
+.card {
+	color: black
+	font-size: 25px;
+
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+	border-color: transparent;
+
+}	
+
+.card img{
+padding:20px;
+flex: column
+
+}
+
+.card a{
+	padding: 0px;
+	text-align: top-center;
+	
+
+}
+.card:hover{
+	color: brown;
+}
+
+
+.card h3,a :hover{
+
+	background-color: transparent;
+	border-color: transparent;
+}
+
+
+
+/************************* Footer's part ******************/
+#footer{
+  padding: 20px;
+  background: rgb(133, 193, 233);
+  color: black;
+  text-align: center;
+  font-family: Montserrat;
+}
+
+#footer a {
+  color: black;
+  font-size: 25px;
+  text-align: center;
+}
+
+#footer a:hover {
+  color: white;
+}
+
+.list-inline-footer {
+	align-items: center;
+}
+
+/************************ Banners' part *******************/
+#banner{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.6)),url("images/girl.jpg");
+  background-position: top center;
+  background-size: cover;
+  height: 600px;
+  padding: 20px;
+}
+
+#banner h1 { 
+  color: #FFF;
+  font-size: 75px;
+  text-shadow: 1px 1px 3px black;
+  margin-bottom: 20px;
+  font-family: 'Amatic SC', cursive;
+}
+
+#banner h2 {
+  color: #FFF;
+  font-size: 25px;
+  margin-bottom: 50px;
+  font-family: Lato;
+  font-weight: 300;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.btn {
+  background: transparent;
+  color: #FFF;
+}
+
+.btn-warning {
+  color: #FFF !important;
+}
+.fas {
+  font-size: 25px;
+}
+
+.banner-links {
+	display: flex;
+	justify-content: space-between;
+}
+
+.links {
+	display: flex;
+}
+
+.dropdown-menu {
+  padding: 15px;
+}
+
+.banner-header {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#banner ul li a {
+  color: #000;
+  padding: 15px;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+/****** LOGIN MODAL ******/
+.loginmodal-container {
+  padding: 30px;
+  max-width: 350px;
+  width: 100% !important;
+  background-color: #FFF;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: Roboto;
+}
+
+.loginmodal-container h1 {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: roboto;
+}
+
+.loginmodal-container input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.loginmodal-container input[type=text], input[type=password] {
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.loginmodal-container input[type=text]:hover, input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.loginmodal {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+/* border-radius: 3px; */
+/* -webkit-user-select: none;
+  user-select: none; */
+}
+
+.loginmodal-submit {
+  /* border: 1px solid #3079ed; */
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  background-color: #E0A800;
+  padding: 17px 0px;
+  font-family: roboto;
+  font-size: 14px;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+.loginmodal-submit:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #357ae8;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.loginmodal-container a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+} 
+
+.login-help{
+  font-size: 12px;
+}
