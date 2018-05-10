@@ -39,14 +39,15 @@ flex: column
 /************************* Footer's part ******************/
 #footer{
   padding: 20px;
-  background: rgb(133, 193, 233);
-  color: black;
+ /* background: rgb(133, 193, 233);*/
+  background: rgb(29, 37, 40);
+  color: white;
   text-align: center;
   font-family: Montserrat;
 }
 
 #footer a {
-  color: black;
+  color: rgb(58, 64, 56);
   font-size: 25px;
   text-align: center;
 }
@@ -97,6 +98,7 @@ flex: column
   color: #FFF;
 }
 
+
 .btn-warning {
   color: #FFF !important;
 }
@@ -115,6 +117,11 @@ flex: column
 
 .dropdown-menu {
   padding: 15px;
+  background-color:rgb(16, 52, 86);
+
+  border-color: rgb(16, 52, 86);
+
+  text-align: center;
 }
 
 .banner-header {
@@ -126,7 +133,7 @@ flex: column
 }
 
 #banner ul li a {
-  color: #000;
+  color: white;
   padding: 15px;
 }
 
